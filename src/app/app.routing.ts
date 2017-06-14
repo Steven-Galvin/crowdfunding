@@ -3,17 +3,25 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: WelcomeComponent
   }, {
-    path: 'app-about',
+    path: 'about',
     component: AboutComponent
   }, {
-    path: 'app-projects',
+    path: 'projects',
     component: ProjectsComponent
+  }, {
+    path: 'projects/:id',
+    component: ProjectDetailComponent
+  },   {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 
