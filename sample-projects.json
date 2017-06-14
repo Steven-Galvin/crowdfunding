@@ -1,0 +1,26 @@
+{ "projects": [{
+  "name": "Portland Community Garden",
+  "manager": "Craig Shultz",
+  "description": "Looking for money to make flowers.",
+  "goal": 5000,
+  "allocation": "Flowers = $50. Craig Shultz managerial fee = $4950",
+  "rewards": "Flowers.",
+  "id": "1"
+  }, {
+  "name": "Fix The Highway",
+  "manager": "James VanWinkle",
+  "description": "The highway sucks, lets make it better so we can drive.",
+  "goal": 25000000,
+  "allocation": "$5,000,000 for pavement. James VanWinkle managerial fee = $20,000,000.",
+  "rewards": "Highway",
+  "id": "2"
+  }, {
+  "name": "Get Julia to Rio",
+  "manager": "Julia Gifford",
+  "description": "Julia has always wanted to go to Rio. I don't have a highway near me to panhandle on, until James VanWinkle finishes his project at least, so I'll have to resort to online panhandling!",
+  "goal": 4000,
+  "allocation": "$2,000 for plane ticket. $2,000 for food and shopping.",
+  "rewards": "Julia will get a tattoo of your name and include it in a picture with my signature!",
+  "id": "3"
+  }]
+}
