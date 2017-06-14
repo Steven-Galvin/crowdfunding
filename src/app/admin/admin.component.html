@@ -1,45 +1,50 @@
-<div class="panel panel-default">
+<div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Add New Project</h3>
   </div>
   <div class="panel-body">
-  <div>
     <div>
-      <label>Name:</label>
-      <br>
-      <input #newName>
-    </div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input class="form-control" #newName>
+      </div>
 
-    <div>
-      <label>Manager</label>
-      <br>
-      <input #newManager>
-    </div>
+      <div>
+        <label>Manager</label>
+        <br>
+        <input class="form-control" #newManager>
+      </div>
 
-    <div>
-      <label>Description</label>
-      <br>
-      <textarea #newDescription></textarea>
-    </div>
+      <div>
+        <label>Description</label>
+        <br>
+        <textarea class="form-control" #newDescription></textarea>
+      </div>
 
-    <div>
-      <label>Goal</label>
-      <br>
-      <input #newGoal type="number">
-    </div>
+      <div>
+        <label>Goal</label>
+        <br>
+        <input class="form-control" #newGoal type="number">
+      </div>
 
-    <div>
-      <label>Allocation</label>
-      <br>
-      <input #newAllocation>
-    </div>
+      <div>
+        <label>Allocation</label>
+        <br>
+        <input class="form-control" #newAllocation>
+      </div>
 
-    <div>
-      <label>Reward</label>
+      <div>
+        <label>Reward</label>
+        <br>
+        <input class="form-control" #newReward>
+      </div>
       <br>
-      <input #newReward>
+      <button class="btn btn-sm btn-primary" (click)="submitForm(newName.value, newManager.value, newDescription.value, newGoal.value, newAllocation.value, newReward.value)">Add</button>
     </div>
-    <button (click)="submitForm(newName.value, newManager.value, newDescription.value, newGoal.value, newAllocation.value, newReward.value)">Add</button>
   </div>
-  </div>
+</div>
+
+<div>
+  <app-projects></app-projects>
 </div>

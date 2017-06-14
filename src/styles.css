@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+img {
+  margin-top: 5px;
+}
 
-.panel-body:hover {
+.details:hover {
   cursor: pointer;
+  text-shadow: 1px 1px 3px grey;
 }
 
 .footer {
@@ -9,6 +13,15 @@
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #222;
   padding: 15px;
+}
+
+.footer-tab {
+  color: #9b9d9d;
+}
+
+.footer-tab:hover {
+  text-decoration: none;
+  color: white;
 }

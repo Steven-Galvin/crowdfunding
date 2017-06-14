@@ -1,0 +1,28 @@
+<h4>Edit Project</h4>
+
+<label>New Project Name:</label>
+<input class="form-control" [(ngModel)]="selectedProject.name">
+<br>
+
+<label>New Project Manager:</label>
+<input class="form-control" [(ngModel)]="selectedProject.manager">
+<br>
+
+<label>New Project Description:</label>
+<textarea class="form-control" [(ngModel)]="selectedProject.description"></textarea>
+<br>
+
+<label>New Project Goal $:</label>
+<input type="number" class="form-control" [(ngModel)]="selectedProject.goal">
+<br>
+
+<label>New Project Allocation:</label>
+<input class="form-control" [(ngModel)]="selectedProject.allocation">
+<br>
+
+<label>New Project Rewards:</label>
+<input class="form-control" [(ngModel)]="selectedProject.rewards">
+<br>
+<button class="btn btn-sm btn-primary" (click)="beginUpdatingProject(selectedProject)">Update</button>
+<hr>
+<button class="btn btn-sm btn-danger" (click)="beginDeletingProject(selectedProject)">Delete</button>
