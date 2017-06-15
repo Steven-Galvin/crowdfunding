@@ -1,7 +1,8 @@
 <div class="">
   <h2>{{(projectToDisplay | async)?.name}}</h2>
-  <h2>{{(projectToDisplay | async)?.manager}}</h2>
-  <h2>{{(projectToDisplay | async)?.description}}</h2>
-  <h2>{{(projectToDisplay | async)?.goal}}</h2>
+  <h3>Goal: ${{(projectToDisplay | async)?.goal}}</h3>
+  <h3>By: {{(projectToDisplay | async)?.manager}}</h3>
+  <br>
+  <h5>{{(projectToDisplay | async)?.description}}</h5>
 
 </div>

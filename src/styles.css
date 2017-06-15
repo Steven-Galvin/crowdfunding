@@ -21,6 +21,11 @@ img {
   color: #9b9d9d;
 }
 
+.footer-tab:visited {
+  color: #9b9d9d;
+  text-decoration: none;
+}
+
 .footer-tab:hover {
   text-decoration: none;
   color: white;

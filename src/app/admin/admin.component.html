@@ -40,7 +40,7 @@
         <input class="form-control" #newReward>
       </div>
       <br>
-      <button class="btn btn-sm btn-primary" (click)="submitForm(newName.value, newManager.value, newDescription.value, newGoal.value, newAllocation.value, newReward.value)">Add</button>
+      <button class="btn btn-sm btn-primary" (click)="submitForm(newName.value, newManager.value, newDescription.value, newGoal.value, newAllocation.value, newReward.value); newName.value=''; newManager.value=''; newDescription.value=''; newGoal.value=''; newAllocation.value=''; newReward.value='';">Add</button>
     </div>
   </div>
 </div>
