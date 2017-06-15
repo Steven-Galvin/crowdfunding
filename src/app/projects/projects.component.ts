@@ -3,6 +3,7 @@ import { Project } from '../project.model';
 import { Router } from '@angular/router';
 import { ProjectService } from '../project.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { SortByGoalPipe } from '../sort-by-goal.pipe'
 
 
 @Component({
@@ -14,6 +15,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ProjectsComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterBySortByGoalPipe: string = "allProjects";
 
   goToDetailPage(clickedProject) {
     this.router.navigate(['projects', clickedProject.$key]);
@@ -23,6 +25,10 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
+    }
+
+    onChange(optionFromMenu) {
+    this.filterBySortByGoalPipe = optionFromMenu;
     }
 
 }

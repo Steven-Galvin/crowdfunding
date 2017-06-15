@@ -1,6 +1,12 @@
 <h2>Projects</h2>
 
-<div *ngFor="let project of projects | async" class="panel panel-primary">
+<select class="form-control" (change)="onChange($event.target.value)">
+  <option value="allProjects" selected="selected">All Projects</option>
+  <option value="heavyProject">Heavy Project</option>
+  <option value="lightProject">Light Project</option>
+</select>
+
+<div *ngFor="let project of projects | async | sortByGoal:filterBySortByGoalPipe" class="panel panel-primary">
   <div class="panel-body">
     <h3 class="details" (click)="goToDetailPage(project)">{{project.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">
