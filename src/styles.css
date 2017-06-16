@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
 img {
   margin-top: 5px;
+  -webkit-animation:spin 15s linear infinite;
 }
 
 .details:hover {
